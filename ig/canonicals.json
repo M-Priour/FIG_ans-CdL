@@ -1,0 +1,86 @@
+[
+  {
+    "id" : "DocumentReferenceCdL-ChainedAuthorDevice",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CdL_DocumentReference_Author_AsDevice",
+    "version" : "0.1.0",
+    "name" : "CdL_DocumentReference_Author_AsDevice"
+  },
+  {
+    "id" : "DocumentReferenceCdL-ChainedAuthorOrganization",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CdL_DocumentReference_Author_AsOrganization",
+    "version" : "0.1.0",
+    "name" : "CdL_DocumentReference_Author_AsOrganization"
+  },
+  {
+    "id" : "DocumentReferenceCdL-ChainedAuthorPatient",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CdL_DocumentReference_Author_AsPatient",
+    "version" : "0.1.0",
+    "name" : "CdL_DocumentReference_Author_AsPatient"
+  },
+  {
+    "id" : "DocumentReferenceCdL-ChainedAuthorPractitioner",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CdL_DocumentReference_Author_AsPractitioner",
+    "version" : "0.1.0",
+    "name" : "CdL_DocumentReference_Author_AsPractitioner"
+  },
+  {
+    "id" : "DocumentReferenceCdL-ChainedAuthorRelatedPerson",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CdL_DocumentReference_Author_AsRelatedPerson",
+    "version" : "0.1.0",
+    "name" : "CdL_DocumentReference_Author_AsRelatedPerson"
+  },
+  {
+    "id" : "DocumentReferenceCdL-ChainedPatient",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CdL_DocumentReference_Patient",
+    "version" : "0.1.0",
+    "name" : "CdL_DocumentReference_Patient"
+  },
+  {
+    "id" : "DocumentReferenceCdL-ChainedSubject",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CdL_DocumentReference_Subject_AsPatient",
+    "version" : "0.1.0",
+    "name" : "CdL_DocumentReference_Subject_AsPatient"
+  },
+  {
+    "id" : "CdL-BundleCreationNoteCdL",
+    "type" : "StructureDefinition",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CdL_BundleCreationNoteCdL",
+    "version" : "0.1.0",
+    "name" : "CdL_BundleCreationNoteCdL"
+  },
+  {
+    "id" : "CdL-BundleResultatRechercheNotesCdL",
+    "type" : "StructureDefinition",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CdL_BundleResultatRechercheNotesCdL",
+    "version" : "0.1.0",
+    "name" : "CdL_BundleResultatRechercheNotesCdL"
+  },
+  {
+    "id" : "8d4ca288-9e24-487f-bbef-7893ca599082",
+    "type" : "StructureDefinition",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CdL_DocumentReferenceCdL",
+    "version" : "0.1.0",
+    "name" : "CdL_DocumentReferenceCdL"
+  },
+  {
+    "id" : "cdl-is-emergency",
+    "type" : "StructureDefinition",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/isEmergency",
+    "version" : "0.1.0",
+    "name" : "CdL_isEmergency"
+  },
+  {
+    "id" : "ans.fhir.fr.example",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.org/fhir/fr/example/ImplementationGuide/ans.fhir.fr.example",
+    "version" : "0.1.0",
+    "name" : "ExampleIG"
+  }
+]
