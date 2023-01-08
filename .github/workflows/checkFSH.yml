@@ -15,3 +15,5 @@ jobs:
         run: npm install -g fsh-sushi
       - name: Run sushi
         run: sushi .
+  call-Test-Unitaire:
+    uses: ./.github/workflows/fhir-validator-junit-engine.yamlworkflow-2.yml
