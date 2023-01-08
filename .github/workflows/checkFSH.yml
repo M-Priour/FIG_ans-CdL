@@ -2,8 +2,7 @@ name: sushi
 
 on: [push]
 jobs:
-  lint:
-    name: Check sushi
+  Run-Shushi :
     runs-on: ubuntu-18.04
 
     steps:
