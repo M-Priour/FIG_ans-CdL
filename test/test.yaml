@@ -1,0 +1,15 @@
+title: Human readable name of the Test Suite.
+validator:
+  version: "4.0"
+  ig:
+    - ../fsh-generated/resources
+  tx: http://tx.fhir.org
+  txLog: logs/tx.txt
+  sct: us
+tests:
+  
+  # 2. Test has multiple file-matches and will generate multiple tests, non of which expects any errors.
+  - fileMatch:
+      - ../fsh-generated/resources/**
+      - "!../fsh-generated/resources/ImplementationGuide-*"
+    tags: ig
