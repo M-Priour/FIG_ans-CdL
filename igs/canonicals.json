@@ -1,0 +1,9 @@
+[
+  {
+    "id" : "ans.fhir.fr.example",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.org/fhir/fr/example/ImplementationGuide/ans.fhir.fr.example",
+    "version" : "0.1.0",
+    "name" : "ExampleIG"
+  }
+]
