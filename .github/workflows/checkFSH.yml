@@ -16,4 +16,5 @@ jobs:
       - name: Run sushi
         run: sushi .
   call-Test-Unitaire:
+    needs :  Run-Shushi
     uses: ./.github/workflows/fhir-validator-junit-engine.yaml
