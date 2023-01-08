@@ -1,0 +1,11 @@
+Name                                             Type      File
+CdL_BundleCreationNoteCdL                        Profile   profiles\CdL_BundleCreationNoteCdL.fsh
+CdL_BundleResultatRechercheNotesCdL              Profile   profiles\CdL_BundleResultatRechercheNotesCdL.fsh
+CdL_DocumentReferenceCdL                         Profile   profiles\CdL_DocumentReferenceCdL.fsh
+DocumentReferenceCdL-ChainedAuthorDevice         Instance  instances\DocumentReferenceCdL-ChainedAuthorDevice.fsh
+DocumentReferenceCdL-ChainedAuthorOrganization   Instance  instances\DocumentReferenceCdL-ChainedAuthorOrganization.fsh
+DocumentReferenceCdL-ChainedAuthorPatient        Instance  instances\DocumentReferenceCdL-ChainedAuthorPatient.fsh
+DocumentReferenceCdL-ChainedAuthorPractitioner   Instance  instances\DocumentReferenceCdL-ChainedAuthorPractitioner.fsh
+DocumentReferenceCdL-ChainedAuthorRelatedPerson  Instance  instances\DocumentReferenceCdL-ChainedAuthorRelatedPerson.fsh
+DocumentReferenceCdL-ChainedPatient              Instance  instances\DocumentReferenceCdL-ChainedPatient.fsh
+DocumentReferenceCdL-ChainedSubject              Instance  instances\DocumentReferenceCdL-ChainedSubject.fsh
