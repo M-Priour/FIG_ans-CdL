@@ -2,10 +2,6 @@ name: ghpages
 
 on:
   workflow_call:
-  push:
-    branches: [main]
-    paths:
-      - ig-template/**
   workflow_dispatch:
 
 env:
@@ -54,6 +50,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
-          destination_dir: igs/
+          destination_dir: ig/
           exclude_assets: '**.zip,**.tgz,**.pack'
           commit_message: ' ${{ github.event.head_commit.message }}'
