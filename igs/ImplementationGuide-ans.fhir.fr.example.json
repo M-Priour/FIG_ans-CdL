@@ -10,7 +10,7 @@
   "name" : "ExampleIG",
   "title" : "ANS IG Example",
   "status" : "draft",
-  "date" : "2023-01-08T11:53:00+00:00",
+  "date" : "2023-01-08T17:31:16+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -31,6 +31,24 @@
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
     "version" : "5.0.0"
+  },
+  {
+    "id" : "frcore",
+    "uri" : "https://simplifier.net/packages/hl7.fhir.fr.core/1.1.0",
+    "packageId" : "hl7.fhir.fr.core",
+    "version" : "1.1.0"
+  },
+  {
+    "id" : "anscis",
+    "uri" : "https://simplifier.net/packages/ans.cisis.fhir.r4/2.1.0",
+    "packageId" : "ans.cisis.fhir.r4",
+    "version" : "2.1.0"
+  },
+  {
+    "id" : "ansAnnuaire",
+    "uri" : "https://simplifier.net/packages/ANS.annuaire.fhir.r4/0.2.0",
+    "packageId" : "ans.annuaire.fhir.r4",
+    "version" : "0.2.0"
   }],
   "definition" : {
     "extension" : [{
@@ -582,6 +600,136 @@
         "valueString" : "true"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CdL-BundleCreationNoteCdL"
+      },
+      "name" : "CdL_BundleCreationNoteCdL",
+      "description" : "StructureDefinition du bundle représentant le flux 1 de création de note du volet CdL",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CdL-BundleResultatRechercheNotesCdL"
+      },
+      "name" : "CdL_BundleResultatRechercheNotesCdL",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/8d4ca288-9e24-487f-bbef-7893ca599082"
+      },
+      "name" : "CdL_DocumentReferenceCdL",
+      "description" : "Profil de la ressource DocumentReference pour le cahier de liaison",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/cdl-is-emergency"
+      },
+      "name" : "CdL_isEmergency",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/DocumentReferenceCdL-ChainedAuthorDevice"
+      },
+      "name" : "DocumentReferenceCdL-ChainedAuthorDevice",
+      "description" : "Who and/or what authored the document\r\nReference to Device\r\nChained with identifier",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/DocumentReferenceCdL-ChainedAuthorOrganization"
+      },
+      "name" : "DocumentReferenceCdL-ChainedAuthorOrganization",
+      "description" : "Who and/or what authored the document\r\nReference to Organization\r\nchained with identifier",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/DocumentReferenceCdL-ChainedAuthorPatient"
+      },
+      "name" : "DocumentReferenceCdL-ChainedAuthorPatient",
+      "description" : "Who and/or what authored the document\r\nReference to Patient\r\nChained with identifier, name, family, given",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/DocumentReferenceCdL-ChainedAuthorPractitioner"
+      },
+      "name" : "DocumentReferenceCdL-ChainedAuthorPractitioner",
+      "description" : "Who and/or what authored the document\r\nReference to Practitioner\r\nchained with identifier, name, given, family",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/DocumentReferenceCdL-ChainedAuthorRelatedPerson"
+      },
+      "name" : "DocumentReferenceCdL-ChainedAuthorRelatedPerson",
+      "description" : "Who and/or what authored the document\r\nReference to RelatedPerson",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/DocumentReferenceCdL-ChainedPatient"
+      },
+      "name" : "DocumentReferenceCdL-ChainedPatient",
+      "description" : "[DocumentReference](documentreference.html): Who/what is the subject of the document\r\nreference to patient\r\nchained to identifier",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/DocumentReferenceCdL-ChainedSubject"
+      },
+      "name" : "DocumentReferenceCdL-ChainedSubject",
+      "description" : "Who/what is the subject of the document\r\nReference to Patient\r\nchained with identifier",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{

@@ -1,0 +1,40 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "DocumentReferenceCdL-ChainedPatient",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"DocumentReferenceCdL-ChainedPatient\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter &quot;DocumentReferenceCdL-ChainedPatient&quot; </p></div><p><b>Standards Status</b>: trial-use</p><p><b>url</b>: <code>http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CdL_DocumentReference_Patient</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: CdL_DocumentReference_Patient</p><p><b>derivedFrom</b>: <a href=\"http://hl7.org/fhir/SearchParameter/clinical-patient\">http://hl7.org/fhir/SearchParameter/clinical-patient</a></p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2021-12-01</p><p><b>publisher</b>: ANS</p><p><b>contact</b>: ANS: <a href=\"https://esante.gouv.fr\">https://esante.gouv.fr</a></p><p><b>description</b>: [DocumentReference](documentreference.html): Who/what is the subject of the document\r\nreference to patient\r\nchained to identifier</p><p><b>code</b>: patient</p><p><b>base</b>: DocumentReference</p><p><b>type</b>: reference</p><p><b>expression</b>: DocumentReference.subject.where(resolve() is Patient)</p><p><b>xpathUsage</b>: normal</p><p><b>target</b>: Patient</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: missing, type, identifier</p><p><b>chain</b>: identifier</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CdL_DocumentReference_Patient",
+  "version" : "0.1.0",
+  "name" : "CdL_DocumentReference_Patient",
+  "derivedFrom" : "http://hl7.org/fhir/SearchParameter/clinical-patient",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2021-12-01",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "[DocumentReference](documentreference.html): Who/what is the subject of the document\r\nreference to patient\r\nchained to identifier",
+  "code" : "patient",
+  "base" : ["DocumentReference"],
+  "type" : "reference",
+  "expression" : "DocumentReference.subject.where(resolve() is Patient)",
+  "xpathUsage" : "normal",
+  "target" : ["Patient"],
+  "multipleOr" : true,
+  "multipleAnd" : true,
+  "modifier" : ["missing",
+  "type",
+  "identifier"],
+  "chain" : ["identifier"]
+}

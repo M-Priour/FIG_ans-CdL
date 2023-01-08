@@ -1,0 +1,43 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "DocumentReferenceCdL-ChainedAuthorPatient",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"DocumentReferenceCdL-ChainedAuthorPatient\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter &quot;DocumentReferenceCdL-ChainedAuthorPatient&quot; </p></div><p><b>Standards Status</b>: trial-use</p><p><b>url</b>: <code>http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CdL_DocumentReference_Author_AsPatient</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: CdL_DocumentReference_Author_AsPatient</p><p><b>derivedFrom</b>: <a href=\"http://hl7.org/fhir/SearchParameter/DocumentReference-author\">http://hl7.org/fhir/SearchParameter/DocumentReference-author</a></p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2021-12-01</p><p><b>publisher</b>: ANS</p><p><b>contact</b>: ANS: <a href=\"https://esante.gouv.fr\">https://esante.gouv.fr</a></p><p><b>description</b>: Who and/or what authored the document\r\nReference to Patient\r\nChained with identifier, name, family, given</p><p><b>code</b>: author</p><p><b>base</b>: DocumentReference</p><p><b>type</b>: reference</p><p><b>expression</b>: DocumentReference.author</p><p><b>xpathUsage</b>: normal</p><p><b>target</b>: Patient</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: missing, type, identifier</p><p><b>chain</b>: identifier, name, family, given</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CdL_DocumentReference_Author_AsPatient",
+  "version" : "0.1.0",
+  "name" : "CdL_DocumentReference_Author_AsPatient",
+  "derivedFrom" : "http://hl7.org/fhir/SearchParameter/DocumentReference-author",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2021-12-01",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Who and/or what authored the document\r\nReference to Patient\r\nChained with identifier, name, family, given",
+  "code" : "author",
+  "base" : ["DocumentReference"],
+  "type" : "reference",
+  "expression" : "DocumentReference.author",
+  "xpathUsage" : "normal",
+  "target" : ["Patient"],
+  "multipleOr" : true,
+  "multipleAnd" : true,
+  "modifier" : ["missing",
+  "type",
+  "identifier"],
+  "chain" : ["identifier",
+  "name",
+  "family",
+  "given"]
+}
